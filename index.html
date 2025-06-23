@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Lottery Wheel 🎡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎡 Live Lottery Wheel</h1>
+  <div id="timer">Next Draw In: <span id="countdown">--:--:--</span></div>
+  <div id="prizepool">Prize Pool: $<span id="prize">0.00</span></div>
+
+  <canvas id="wheel" width="400" height="400"></canvas>
+  <div id="winner"></div>
+
+  <h2>🏆 Winners of Last 3 Days</h2>
+  <table id="winners">
+    <thead>
+      <tr><th>Time (IST)</th><th>Winner</th><th>Tickets</th><th>Participants</th><th>💰 Won ($)</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/socket.io/client-dist/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
